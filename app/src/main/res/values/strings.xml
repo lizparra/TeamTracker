@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DrunkMode</string>
+    <string name="mapbutton">Click to open map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
