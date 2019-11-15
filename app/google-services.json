@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "235900190834",
-    "firebase_url": "https://drunk-mode-f6af6.firebaseio.com",
-    "project_id": "drunk-mode-f6af6",
-    "storage_bucket": "drunk-mode-f6af6.appspot.com"
+    "project_number": "51208836956",
+    "firebase_url": "https://drunkmode-57ee9.firebaseio.com",
+    "project_id": "drunkmode-57ee9",
+    "storage_bucket": "drunkmode-57ee9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:235900190834:android:05817ffb5ea5ed5b5182eb",
+        "mobilesdk_app_id": "1:51208836956:android:841d73deea86ff6edf1399",
         "android_client_info": {
-          "package_name": "com.example.drunkmode"
+          "package_name": "edu.fsu.cs.drunkmode_new"
         }
       },
       "oauth_client": [
         {
-          "client_id": "235900190834-fgrk4u60dqqmtnca7m7n83uagrtrltrh.apps.googleusercontent.com",
+          "client_id": "51208836956-hmnd5kas0k1pljbt185b2niqegrg38ff.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.drunkmode",
-            "certificate_hash": "75f47f8b4c017b31ef84c0148a5b83891f9b0fed"
+            "package_name": "edu.fsu.cs.drunkmode_new",
+            "certificate_hash": "7a0d69b558fa3b848a3a0507de6fcd069ec6f1f5"
           }
         },
         {
-          "client_id": "235900190834-c8rvidsap7jmbl1qstmpclacabpac97i.apps.googleusercontent.com",
+          "client_id": "51208836956-tcijvr22v1a8mn5bhcbg4qkec3i9al36.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDPJJsg9ygBIcmg2kjxcmUPxlItKTdL8Zc"
+          "current_key": "AIzaSyCnj8askFhWKjMTfZk9bw4yQeCC41NMSuo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "235900190834-c8rvidsap7jmbl1qstmpclacabpac97i.apps.googleusercontent.com",
+              "client_id": "51208836956-tcijvr22v1a8mn5bhcbg4qkec3i9al36.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

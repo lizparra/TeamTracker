@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DrunkMode_NEW</string>
+    <string name="auth_failed">FAILED</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="signed_out">signed out</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
