@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "855186081402",
+    "firebase_url": "https://drunkmodeapp3.firebaseio.com",
+    "project_id": "drunkmodeapp3",
+    "storage_bucket": "drunkmodeapp3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855186081402:android:7ed3353490f1bd06659dc3",
+        "android_client_info": {
+          "package_name": "com.swe.drunkmodeapp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855186081402-5383mg10elgm93hsnu9kgg5dtih6cjcd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swe.drunkmodeapp3",
+            "certificate_hash": "25ebc3045930d723d0cb9d6d14ef1252b66d7fe9"
+          }
+        },
+        {
+          "client_id": "855186081402-pvqmtcp46pjp8e5f7dv3hqju3rsotsed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHjlJn3_cZCwIzN9ss1-eHaT-j6O5a6kw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855186081402-pvqmtcp46pjp8e5f7dv3hqju3rsotsed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
