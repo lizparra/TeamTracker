@@ -1,4 +1,0 @@
-#Sun Oct 20 18:35:35 EDT 2019
-base.0=C\:\\Users\\lolif\\AndroidStudioProjects\\Drunk_Mode_Outline\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
