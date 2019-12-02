@@ -43,6 +43,7 @@ public class MembersDisplay extends AppCompatActivity {
     Button confirm;
 
     String memberemail;
+    ArrayList<String> memberEmails = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +91,7 @@ public class MembersDisplay extends AppCompatActivity {
                         for (String id : memberlist){
                             if (map.containsKey(id)){
                                 namedMemberList.add(dataSnapshot.child(id).child("fullName").getValue().toString());
+                                memberEmails.add(dataSnapshot.child(id).child("email").getValue().toString());
                             }
                         }
                         adapter.notifyDataSetChanged();
@@ -149,33 +151,21 @@ public class MembersDisplay extends AppCompatActivity {
                 query.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        boolean memberadded = false;
-                        for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                            if (snapshot.child("email").getValue().toString().equals(memberemail)) {
-                                DatabaseReference ref2 = database.getReference().child("users").child(snapshot.getKey().toString()).child("groups").child(groupID);
-                                ref2.setValue(true);
-                                memberadded = true;
+                        boolean memberadded = true;
+                        if (!memberEmails.contains(memberemail)) {
+                            memberadded = false;
+                            for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                if (snapshot.child("email").getValue().toString().equals(memberemail)) {
+                                    DatabaseReference ref = database.getReference().child("GroupDetail").child(groupID).child("members").push();
+                                    ref.setValue(snapshot.getKey().toString());
+                                    DatabaseReference ref2 = database.getReference().child("users").child(snapshot.getKey().toString()).child("groups").child(groupID);
+                                    ref2.setValue(true);
+                                    memberadded = true;
+                                }
                             }
                         }
                         if (memberadded == false) {
                             Toast.makeText(getApplicationContext(), "Member not found!", Toast.LENGTH_LONG).show();
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-
-                query.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                            if (snapshot.child("email").getValue().toString().equals(memberemail)) {
-                                DatabaseReference ref = database.getReference().child("GroupDetail").child(groupID).child("members").push();
-                                ref.setValue(snapshot.getKey().toString());
-                            }
                         }
                     }
 
