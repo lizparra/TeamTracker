@@ -141,7 +141,7 @@ public class GroupDisplayActivity extends AppCompatActivity {
                 DatabaseReference ref = database.getReference().child("GroupDetail").push();
                 ref.child("name").setValue(editText.getText().toString());
                 ref.child("ownerid").setValue(mAuth.getCurrentUser().getUid());
-                ref.child("lastMessage").child("text").setValue("I Created this Group!");
+                ref.child("lastMessage").child("text").setValue("Group Created!");
                 ref.child("lastMessage").child("sentBy").setValue(mAuth.getCurrentUser().getUid());
                 DatabaseReference membersref = ref.child("members").push();
 
@@ -150,7 +150,7 @@ public class GroupDisplayActivity extends AppCompatActivity {
                 String currentDateandTime = new Date().toGMTString();
 
                 DatabaseReference ref2 = database.getReference().child("messages").child(ref.getKey()).push();
-                ref2.child("text").setValue("I Created this Group!");
+                ref2.child("text").setValue("Group Created!");
                 ref2.child("sentBy").setValue(mAuth.getCurrentUser().getUid());
                 ref2.child("timesent").setValue(currentDateandTime);
 
