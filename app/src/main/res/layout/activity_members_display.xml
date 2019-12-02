@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GroupDisplayActivity">
-
-
+    tools:context=".MembersDisplay">
 
     <TextView
-        android:id="@+id/Title"
+        android:id="@+id/memberGroupTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DrunkMode"
@@ -19,35 +17,22 @@
         android:layout_alignParentStart="true"
         />
 
-
-    <ListView
-        android:id="@+id/group_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Title">
-
-    </ListView>
-
     <Button
-        android:id="@+id/profileButton"
+        android:id="@+id/addMemberButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PROFILE"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="10dp"
-        android:textSize="20sp"
-        android:onClick="displayProfile"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Group"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="createGroupDialog"
-        />
+        android:text="Add Member"
+        android:onClick= "addMember"/>
+
+    <ListView
+        android:id="@+id/member_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memberGroupTitle">
+
+    </ListView>
 
 </RelativeLayout>

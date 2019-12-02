@@ -26,6 +26,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.security.acl.Group;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
     private FirebaseAuth mAuth;
@@ -64,6 +66,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
         }
 
+        boolean permissionAccessCoarseLocationApproved =
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                        == PackageManager.PERMISSION_GRANTED;
+
+        if (permissionAccessCoarseLocationApproved) {
+            boolean backgroundLocationPermissionApproved =
+                    ActivityCompat.checkSelfPermission(this,
+                            Manifest.permission.ACCESS_BACKGROUND_LOCATION)
+                            == PackageManager.PERMISSION_GRANTED;
+
+            if (backgroundLocationPermissionApproved) {
+                // App can access location both in the foreground and in the background.
+                // Start your service that doesn't have a foreground service type
+                // defined.
+            } else {
+                // App can only access location in the foreground. Display a dialog
+                // warning the user that your app must have all-the-time access to
+                // location in order to function properly. Then, request background
+                // location.
+                ActivityCompat.requestPermissions(this, new String[] {
+                                Manifest.permission.ACCESS_BACKGROUND_LOCATION},
+                        1);
+            }
+        } else {
+            // App doesn't have access to the device's location at all. Make full request
+            // for permission.
+            ActivityCompat.requestPermissions(this, new String[] {
+                            Manifest.permission.ACCESS_COARSE_LOCATION,
+                            Manifest.permission.ACCESS_BACKGROUND_LOCATION
+                    },
+                    1);
+        }
+
         // Views
         mStatusTextView = findViewById(R.id.status);
         mDetailTextView = findViewById(R.id.detail);
@@ -89,12 +124,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             updateUI(null);
         }
         else {
-            Intent i = new Intent(this, MapsActivity.class);
+            Intent j = new Intent(getBaseContext(), LocationService.class);
+            startService(j);
+            Intent i = new Intent(getBaseContext(), GroupDisplayActivity.class);
             startActivity(i);
+            finish();
         }
     }
 
-    public void createAccount(String email, String password, final String name){
+    public void createAccount(final String email, String password, final String name){
 
         Log.d(TAG, "createAccount:" + email);
         if (!validateForm()) {
@@ -110,6 +148,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     updateUI(user);
                     DatabaseReference ref = database.getReference("users");
                     ref.child(user.getUid()).child("fullName").setValue(name);
+                    ref.child(user.getUid()).child("email").setValue(email);
 
                 } else {
                     Log.w(TAG, "createUserWithEmail:failure", task.getException());
@@ -161,8 +200,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                            Intent j = new Intent(getBaseContext(), LocationService.class);
+                            startService(j);
+                            Intent i = new Intent(getBaseContext(), GroupDisplayActivity.class);
                             startActivity(i);
+                            finish();
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
