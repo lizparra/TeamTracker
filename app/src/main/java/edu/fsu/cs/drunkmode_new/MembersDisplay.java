@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.renderscript.Sampler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -144,6 +145,7 @@ public class MembersDisplay extends AppCompatActivity {
             public void onClick(View view) {
                 memberemail = editText.getText().toString();
                 Query query = database.getReference().child("users");
+
                 query.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -158,7 +160,6 @@ public class MembersDisplay extends AppCompatActivity {
                         if (memberadded == false) {
                             Toast.makeText(getApplicationContext(), "Member not found!", Toast.LENGTH_LONG).show();
                         }
-                        removeDialog(1);
                     }
 
                     @Override
@@ -183,6 +184,7 @@ public class MembersDisplay extends AppCompatActivity {
 
                     }
                 });
+                removeDialog(1);
             }
         });
 

@@ -145,10 +145,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (task.isSuccessful()) {
                     Log.d(TAG, "createUserWithEmail:success");
                     FirebaseUser user = mAuth.getCurrentUser();
-                    updateUI(user);
                     DatabaseReference ref = database.getReference("users");
                     ref.child(user.getUid()).child("fullName").setValue(name);
                     ref.child(user.getUid()).child("email").setValue(email);
+                    Intent j = new Intent(getBaseContext(), LocationService.class);
+                    startService(j);
+                    Intent i = new Intent(getBaseContext(), GroupDisplayActivity.class);
+                    startActivity(i);
+                    finish();
 
                 } else {
                     Log.w(TAG, "createUserWithEmail:failure", task.getException());
