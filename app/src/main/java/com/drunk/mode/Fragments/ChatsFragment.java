@@ -264,8 +264,8 @@ public class ChatsFragment extends RootFragment implements View.OnClickListener 
         user.setUid(currentUser.getUid());
         user.setEmail(currentUser.getEmail());
 
-        /*
-        database.getReference("Users").child(currentUser.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+
+        database.getReference("Users").child(currentUser.getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 user = dataSnapshot.getValue(CreateUser.class);
@@ -278,7 +278,7 @@ public class ChatsFragment extends RootFragment implements View.OnClickListener 
 
             }
         });
-        */
+
 
         messagedb = database.getReference("messages");
         messagedb.addChildEventListener(new ChildEventListener(){
