@@ -66,7 +66,6 @@ public class AlertCenterActivity extends AppCompatActivity {
         recycleradapter = new HelpAlertsAdapter(myList,AlertCenterActivity.this);
         recyclerView.setAdapter(recycleradapter);
 
-
         if (Build.VERSION.SDK_INT >= 21) {
             Window window = getWindow();
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);

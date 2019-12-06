@@ -46,7 +46,6 @@ public class JoinFragment extends RootFragment
 
     DatabaseReference circleReference,joinedReference;
     String joinUserId,currentUserId;
-    ProgressDialog progressDialog;
     String currentUsercode;
 
     @Override
@@ -144,8 +143,6 @@ public class JoinFragment extends RootFragment
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if(task.isSuccessful())
                                                         {
-                                                            progressDialog.dismiss();
-
                                                             pinView.setValue("");
                                                             Toast.makeText(getContext(),"You joined this circle successfully",Toast.LENGTH_LONG).show();
                                                         }
