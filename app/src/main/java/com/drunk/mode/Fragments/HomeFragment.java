@@ -170,7 +170,7 @@ public class HomeFragment extends RootFragment implements OnMapReadyCallback,
     {
 
         latLngCurrent = new LatLng(location.getLatitude(), location.getLongitude());
-        
+
         if (marker == null) {
             marker = mMap.addMarker(new MarkerOptions().position(latLngCurrent).title("Current Location").icon(BitmapDescriptorFactory.fromResource(R.drawable.current_location_pointer)));
 

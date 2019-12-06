@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:text="Set every 30 min Reminder"
                     android:background="@color/white"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/button_cancel"
@@ -194,7 +194,7 @@
                     android:text="Cancel Reminder"
                     android:background="@color/white"
                     android:textColor="#000000"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="10dp" />
                 </LinearLayout>
 
 

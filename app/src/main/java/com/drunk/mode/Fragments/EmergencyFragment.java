@@ -16,6 +16,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 
+import com.drunk.mode.Services.WaterReminderService;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.drunk.mode.Activities.AlertCenterActivity;
@@ -34,8 +35,8 @@ public class EmergencyFragment extends RootFragment
    @BindView(R.id.alertCenterCardView) CardView cardViewAlertCenter;
    @BindView(R.id.sendAlertCardView) CardView cardViewSendAlert;
    @BindView(R.id.aboutDevId) CardView cardViewLogout;
-//   @BindView(R.id.button_timepicker) Button button_timepicker;
-//   @BindView(R.id.button_cancel) Button button_Cancel;
+   @BindView(R.id.button_timepicker) Button button_timepicker;
+   @BindView(R.id.button_cancel) Button button_Cancel;
 
 
    FirebaseAuth auth;
@@ -88,6 +89,24 @@ public class EmergencyFragment extends RootFragment
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 Objects.requireNonNull(getActivity()).finish();
+            }
+        });
+
+        button_timepicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext().getApplicationContext(), WaterReminderService.class);
+                i.setAction("");
+                getContext().getApplicationContext().startService(i);
+            }
+        });
+
+        button_Cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext().getApplicationContext(), WaterReminderService.class);
+                i.setAction("stop");
+                getContext().getApplicationContext().startService(i);
             }
         });
 
