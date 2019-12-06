@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "774123922278",
+    "firebase_url": "https://attempt8-37c7e.firebaseio.com",
+    "project_id": "attempt8-37c7e",
+    "storage_bucket": "attempt8-37c7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774123922278:android:2521b5193d3cb7702f1ea7",
+        "android_client_info": {
+          "package_name": "com.example.drunk8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774123922278-egsk8n00misluri3sbl094qg3fj45udp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drunk8",
+            "certificate_hash": "75f47f8b4c017b31ef84c0148a5b83891f9b0fed"
+          }
+        },
+        {
+          "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf95latepHbY0Cq6znwaF1nxzjU5q6-AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774123922278:android:8235a12ab29f2c792f1ea7",
+        "android_client_info": {
+          "package_name": "com.koddev.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774123922278-l1n7dm46lmnhjaea6borb5gogaovl0sm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.koddev.chatapp",
+            "certificate_hash": "75f47f8b4c017b31ef84c0148a5b83891f9b0fed"
+          }
+        },
+        {
+          "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf95latepHbY0Cq6znwaF1nxzjU5q6-AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774123922278:android:afae720bec13501e2f1ea7",
+        "android_client_info": {
+          "package_name": "com.mytracker.familygpstracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774123922278-m6jd1m117u3pjbbvndluck5l2m6co00n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mytracker.familygpstracker",
+            "certificate_hash": "75f47f8b4c017b31ef84c0148a5b83891f9b0fed"
+          }
+        },
+        {
+          "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf95latepHbY0Cq6znwaF1nxzjU5q6-AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774123922278:android:6d6639712a17827e2f1ea7",
+        "android_client_info": {
+          "package_name": "com.swe.drunkmodeapp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774123922278-bu2la1e3qgidmf05kbbeeo2cj4ubi07a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swe.drunkmodeapp3",
+            "certificate_hash": "75f47f8b4c017b31ef84c0148a5b83891f9b0fed"
+          }
+        },
+        {
+          "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf95latepHbY0Cq6znwaF1nxzjU5q6-AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774123922278-3lbeg0mnfdl7sbubctitmp743tpose2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

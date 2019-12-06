@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:gravity="center_horizontal"
+            android:text="Share this invite code with the people you want in your group"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:fontFamily="monospace"
+            android:layout_marginTop="25dp"
+            android:text="XXXXXX" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:text="Share your code out loud or send it in a message"
+            />
+
+        <Button
+            android:layout_width="120dp"
+            android:background="@drawable/bg_gradient_red"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:id="@+id/shareButton"
+            android:textAllCaps="false"
+            android:text="Share"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:layout_marginStart="8dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Enter Invite code to join"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            />
+
+
+        <com.goodiebag.pinview.Pinview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mypinview"
+            app:pinWidth="29dp"
+            android:minHeight="30dp"
+            app:pinLength="6"
+            app:cursorVisible="true"
+            app:forceKeyboard="false"
+            app:inputType="number"
+            android:layout_marginTop="15dp">
+        </com.goodiebag.pinview.Pinview>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Ask your friends for their group code"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_red"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/joinBtn"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Join"
+             />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
