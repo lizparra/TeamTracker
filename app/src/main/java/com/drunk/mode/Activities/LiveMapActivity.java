@@ -174,15 +174,7 @@ public class LiveMapActivity extends AppCompatActivity implements OnMapReadyCall
 
 //        client.connect();
 
-//        LatLng dangerous_area = new LatLng(30.448107, -84.306236);
-//        mMap.addCircle(new CircleOptions()
-//        .center(dangerous_area)
-//        .radius(500)
-//        .strokeColor(Color.BLUE)
-//        .fillColor(0x220000FF)
-//        .strokeWidth(5.0f));
-//
-//        GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation)
+
 
 
         mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
