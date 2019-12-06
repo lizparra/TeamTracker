@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Drunk Mode</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+
+
+    <string name="maps_api">AIzaSyCO8DMIWoYvO3TsX6L4c830-ZV_2L1dRmQ</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <array name="tab_colors">
+        <item name="tab_1">@color/colorPrimary</item>
+        <item name="tab_2">@color/colorPrimary</item>
+        <item name="tab_3">@color/colorPrimary</item>
+        <item name="tab_4">@color/colorPrimary</item>
+        <item name="tab_5">@color/colorPrimary</item>
+    </array>
 </resources>

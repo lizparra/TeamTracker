@@ -1,0 +1,96 @@
+{
+  "Chatlist" : {
+    "3YCRibuEUpW1cklKxZYVrZzru1P2" : {
+      "JvsNPguFudYmrBSg0LbA6Smbx8e2" : {
+        "id" : "JvsNPguFudYmrBSg0LbA6Smbx8e2"
+      }
+    },
+    "JvsNPguFudYmrBSg0LbA6Smbx8e2" : {
+      "3YCRibuEUpW1cklKxZYVrZzru1P2" : {
+        "id" : "3YCRibuEUpW1cklKxZYVrZzru1P2"
+      },
+      "oLPClKyoGfdOUIfQWgdmxUSwINA3" : {
+        "id" : "oLPClKyoGfdOUIfQWgdmxUSwINA3"
+      }
+    },
+    "oLPClKyoGfdOUIfQWgdmxUSwINA3" : {
+      "JvsNPguFudYmrBSg0LbA6Smbx8e2" : {
+        "id" : "JvsNPguFudYmrBSg0LbA6Smbx8e2"
+      }
+    }
+  },
+  "Chats" : {
+    "-LtkQFlVo1NsqPsjkJMg" : {
+      "isseen" : true,
+      "message" : "Hello",
+      "receiver" : "3YCRibuEUpW1cklKxZYVrZzru1P2",
+      "sender" : "JvsNPguFudYmrBSg0LbA6Smbx8e2"
+    },
+    "-LtlKmTKg3rrx-KGrfda" : {
+      "isseen" : true,
+      "message" : "😎",
+      "receiver" : "JvsNPguFudYmrBSg0LbA6Smbx8e2",
+      "sender" : "oLPClKyoGfdOUIfQWgdmxUSwINA3"
+    },
+    "-LtlYiVy1OqGFVoo5iFv" : {
+      "isseen" : true,
+      "message" : "Hola",
+      "receiver" : "JvsNPguFudYmrBSg0LbA6Smbx8e2",
+      "sender" : "3YCRibuEUpW1cklKxZYVrZzru1P2"
+    },
+    "-LtlohKFJ1uOrHLGvUQh" : {
+      "message" : "hi",
+      "receiver" : "3YCRibuEUpW1cklKxZYVrZzru1P2",
+      "sender" : "KgFPA9Ba30VfVMHXcgfmwi4ig8m1"
+    },
+    "-LtlpaYH6rLsMVb9x9XW" : {
+      "message" : "Hello How are you!",
+      "receiver" : "3YCRibuEUpW1cklKxZYVrZzru1P2",
+      "sender" : "KgFPA9Ba30VfVMHXcgfmwi4ig8m1"
+    },
+    "-LtlpesdMvf2wYAdq5P_" : {
+      "message" : "You are awesome!",
+      "receiver" : "oLPClKyoGfdOUIfQWgdmxUSwINA3",
+      "sender" : "KgFPA9Ba30VfVMHXcgfmwi4ig8m1"
+    }
+  },
+  "Tokens" : {
+    "3YCRibuEUpW1cklKxZYVrZzru1P2" : {
+      "token" : "ceAH11ZUxRg:APA91bGzaoeziNFFisDV-xk0OsOMD0HHguJmXDCYidMjLJXyitCnCpoAMXnjzWxG0CiLoHTXjHdfgma9w4guWLImjukjQwTRc8GNth5ugenFNsTvEhqwp2-jK_FRG0cWuvNe02FxnQOu"
+    },
+    "JvsNPguFudYmrBSg0LbA6Smbx8e2" : {
+      "token" : "cVZfVqEr_sw:APA91bEbLDUvzHjh-v1ibUu_JyIyQ3a43puqIc5RvEKj8-tkg6Emeiy70eVAbtV_i86Q1ZCrJFql41-87E7SI_Yr-RIB0GhJHBOvmX-Ml-YUcwPNoYuJzhH1iPhg8TFBJxxHtdy8DR2S"
+    },
+    "oLPClKyoGfdOUIfQWgdmxUSwINA3" : {
+      "token" : "ceAH11ZUxRg:APA91bGzaoeziNFFisDV-xk0OsOMD0HHguJmXDCYidMjLJXyitCnCpoAMXnjzWxG0CiLoHTXjHdfgma9w4guWLImjukjQwTRc8GNth5ugenFNsTvEhqwp2-jK_FRG0cWuvNe02FxnQOu"
+    }
+  },
+  "Users" : {
+    "3YCRibuEUpW1cklKxZYVrZzru1P2" : {
+      "id" : "3YCRibuEUpW1cklKxZYVrZzru1P2",
+      "imageURL" : "default",
+      "search" : "andres2",
+      "status" : "offline",
+      "username" : "Andres2"
+    },
+    "JvsNPguFudYmrBSg0LbA6Smbx8e2" : {
+      "id" : "JvsNPguFudYmrBSg0LbA6Smbx8e2",
+      "imageURL" : "default",
+      "search" : "felipe",
+      "status" : "offline",
+      "username" : "felipe"
+    },
+    "KgFPA9Ba30VfVMHXcgfmwi4ig8m1" : {
+      "id" : "KgFPA9Ba30VfVMHXcgfmwi4ig8m1",
+      "imageURL" : "default",
+      "name" : "testing"
+    },
+    "oLPClKyoGfdOUIfQWgdmxUSwINA3" : {
+      "id" : "oLPClKyoGfdOUIfQWgdmxUSwINA3",
+      "imageURL" : "default",
+      "search" : "raymond",
+      "status" : "online",
+      "username" : "raymond"
+    }
+  }
+}
