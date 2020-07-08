@@ -1,1 +1,3 @@
-# Drunk-Mode
+# Team Tracker
+
+Built an Android application where students can sign up or login creating a unique ID. With this unique ID, users can create groups by inputting someone else's ID into the app. The app has a group chat where groups can talk with each other. You are also able to track everyone in the group in real time. When tapping on a specific person, you can view when they were last in the app and where. It also prompts you to use google maps to get directions to the person's location. This is useful in case the person's phone died or they are not responding. Additionally, if the user is in danger, they are able to send a help alert to everyone in the group with their location. 
